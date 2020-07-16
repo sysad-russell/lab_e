@@ -119,7 +119,7 @@ else: print(f"invaild input""\n")
 Borough_choice = '0'
 
 if Borough_choice == '0':
-	print(f"\n""Borough Choice: Choose 1 of 8 choices")
+	print(f"\n""Borough Choice: Choose 1 of 5 choices")
 print(f"Choose 1 for {borough[0]}")
 print(f"Choose 2 for {borough[1]}")
 print(f"Choose 3 for {borough[2]}")
