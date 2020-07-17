@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-
-import random
-
+#								PART 1
+#
+#		HOW-TO: Create a multi-line string variable called my_story which contains a short story about an <animal>
+#			in a specific <borough> of New York, performing some <action> involving one specific type of <food>.
+#		TODO: Ask the user to display in the command line, their selection for <animal>, <borough>, <action> and <food>
+#		TODO: Create a Python program that swaps those items in your story
+#		TODO: Print the user's story to the command line
 
 bar = "*"
 print("")
@@ -30,11 +34,11 @@ pest[3]:action1[1]
 
 
 
-###################### MENU #########################
+######################## MENU #########################
 
+#		Area for Menu Creation
 
-
-############## ANIMAL ##############
+######################## ANIMAL #######################
 Animal_choice = '0'
 
 if Animal_choice == '0':
@@ -56,7 +60,7 @@ elif Animal_choice == '4':
 	Animal_choice = pest[3]
 else: print(f"invaild input""\n")
 
-############# ACTION #################
+######################## ACTION #######################
 
 action_choice = '0'
 
@@ -74,7 +78,7 @@ elif Action_choice == '2':
 else:	print("invaild input")
 
 
-############# FOODS #################
+######################## FOODS ########################
 
 
 Food_choice = '0'
@@ -113,7 +117,7 @@ elif Food_choice == '8':
 else: print(f"invaild input""\n")
 
 
-######### BOROUGHS ################
+######################## BOROUGHS #####################
 
 
 Borough_choice = '0'
@@ -143,15 +147,12 @@ elif Borough_choice == '5':
 
 else: print(f"invaild input""\n")
 
-# testing code
+######################## Story Output ########################
+
+#		Short story satisfiying TODO list
+
+##############################################################
 print(f"""
 	In {Borough_choice}, a borough of New York, a {Animal_choice} quickly
 {pest_act[Animal_choice]}, and {Action_choice}, a {Food_choice}.
 """)
-#
-#print(pest[{food[7]}0:])
-#
-#
-#
-#
-#
