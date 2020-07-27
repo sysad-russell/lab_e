@@ -13,15 +13,8 @@
 
 import hashlib # imports Hashing library into current python script
 
-
-department = input("What department do you belong to?: ")
-username = input("What is your username?: ")
-password = input("What is your password?: ")
-
 def make_pw_hash(password): # defines the function that creates the hash for the password
     return hashlib.sha256(str.encode(password)).hexdigest # invokes hashing on a provided password
-
-
 
 def check_pw_hash(username, password, hash): # defines hash check function against reentry of password
     if make_pw_hash(password) == hash:
@@ -30,8 +23,11 @@ def check_pw_hash(username, password, hash): # defines hash check function again
     return False
 
 
+department = input("What department do you belong to?: ")
+username = input("What is your username?: ")
+password = input("What is your password?: ")
 
-make_pw_hash(password)
+print(make_pw_hash(password))
 
 
 
@@ -72,7 +68,7 @@ def averages(*args):
 
 integer = input("Enter a number: ")
 def reverse_num(integer):
-    reverse_int = str(integer) [::-1]
-    print(reverse_int)
+    reverse_int = str(integer) [::-1] # [strt:end:skip-cnt]
+    return reverse_int
 
-reverse_num(int)
+print(reverse_num(integer))
